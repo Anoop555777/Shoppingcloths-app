@@ -1,0 +1,32 @@
+.header {
+  max-width: 140rem;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.2rem;
+  align-items: center;
+  height: 6.4rem;
+
+  &__logo--link {
+    display: inline-block;
+  }
+}
+.main__nav {
+  &--lists {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  &--link:link,
+  &--link:visited {
+    text-decoration: none;
+    display: inline-block;
+    font: inherit;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: uppercase;
+  }
+}
