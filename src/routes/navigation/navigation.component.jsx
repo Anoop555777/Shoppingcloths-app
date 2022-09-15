@@ -22,7 +22,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link className="main__nav--link" to="/sign-in">
+              <Link className="main__nav--link" to="/auth">
                 SignIn
               </Link>
             </li>
