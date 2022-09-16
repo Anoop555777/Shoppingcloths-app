@@ -17,7 +17,7 @@ const SignUp = () => {
             id="name"
             required
           />
-          <label for="name" className={classes.form__label}>
+          <label htmlFor="name" className={classes.form__label}>
             Display Name
           </label>
         </div>
@@ -29,7 +29,7 @@ const SignUp = () => {
             id="emailuser"
             required
           />
-          <label for="emailuser" className={classes.form__label}>
+          <label htmlFor="emailuser" className={classes.form__label}>
             Email
           </label>
         </div>
@@ -41,7 +41,7 @@ const SignUp = () => {
             id="passworduser"
             required
           />
-          <label for="passworduser" className={classes.form__label}>
+          <label htmlFor="passworduser" className={classes.form__label}>
             Password
           </label>
         </div>
@@ -53,7 +53,7 @@ const SignUp = () => {
             id="confirmpassword"
             required
           />
-          <label for="confirmpassword" className={classes.form__label}>
+          <label htmlFor="confirmpassword" className={classes.form__label}>
             confirm Password
           </label>
         </div>

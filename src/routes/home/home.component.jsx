@@ -1,5 +1,6 @@
+import { Fragment, useState, useEffect } from "react";
 import Directory from "../../components/directory/directory.component";
-import React from "react";
+import LoadingSpinner from "../../components/UI/loadingspinner.module";
 const categories = [
   {
     id: 1,
@@ -29,7 +30,20 @@ const categories = [
 ];
 
 const Home = () => {
-  return <Directory categories={categories} />;
+  const [loadingSpinner, setLoadingSpinner] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadingSpinner(false);
+    }, 1000);
+  }, [loadingSpinner]);
+
+  return (
+    <Fragment>
+      {loadingSpinner && <LoadingSpinner />}
+      {!loadingSpinner && <Directory categories={categories} />}
+    </Fragment>
+  );
 };
 
 export default Home;

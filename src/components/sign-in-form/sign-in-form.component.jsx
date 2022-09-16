@@ -4,7 +4,7 @@ const SignIn = () => {
   return (
     <div className={classes.sign__form}>
       <h1 className="primary__heading margin__bottom--sm">
-        I already have an account
+        label work need to be done I already have an account
       </h1>
       <h3 className="secondary__heading margin__bottom--lg">
         Sign in with your email and password
@@ -14,10 +14,11 @@ const SignIn = () => {
           <input
             type="email"
             className={classes.form__input}
+            placeholder=""
             id="email"
             required
           />
-          <label for="email" className={classes.form__label}>
+          <label htmlFor="email" className={classes.form__label}>
             Email
           </label>
         </div>
@@ -29,7 +30,7 @@ const SignIn = () => {
             id="password"
             required
           />
-          <label for="password" className={classes.form__label}>
+          <label htmlFor="password" className={classes.form__label}>
             Password
           </label>
         </div>

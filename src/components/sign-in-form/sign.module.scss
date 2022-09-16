@@ -42,6 +42,10 @@
     transform: translateY(-2rem);
   }
 
+  &__input:valid + &__label {
+    transform: translateY(-2rem);
+  }
+
   &__input:placeholder-shown + &__label {
     transform: translateY(-2rem);
   }
@@ -53,7 +57,19 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
+  box-shadow: 0 1.2rem 1rem 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
 }
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+}
+
+.btn:active {
+  transform: translateY(-0.2rem);
+}
+
 .btn:not(:last-child) {
   margin-right: 2.4rem;
 }
