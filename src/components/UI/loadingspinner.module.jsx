@@ -3,7 +3,7 @@ import classes from "./loadingspinner.module.scss";
 const LoadingSpinner = () => {
   return (
     <div className={classes.model}>
-      <div class={classes.spinner}>
+      <div className={classes.spinner}>
         <svg>
           <use href="/img/icons.svg#icon-loader"></use>
         </svg>

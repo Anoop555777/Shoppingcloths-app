@@ -12,6 +12,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .primary__heading {
   font-weight: 300;
   letter-spacing: -0.5px;
